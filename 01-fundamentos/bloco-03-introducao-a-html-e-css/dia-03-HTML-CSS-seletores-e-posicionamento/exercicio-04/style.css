@@ -1,0 +1,68 @@
+.top_frases li {
+  background-color: yellow;
+}
+
+.top_frases li:nth-of-type(2n) {
+  color: green;
+}
+
+.top_frases li:nth-of-type(2n + 1) {
+  text-transform: uppercase;
+}
+
+h1,
+h3 {
+  color: red;
+}
+
+h1 em,
+h3 em {
+  font-size: 40px;
+  border: 1px solid black;
+}
+
+li {
+  font-size: 20px;
+}
+
+li em {
+  font-weight: bold;
+}
+
+/* :nth-child(-n+3)
+Representa os primeiros três elementos. [=-0+3, -1+3, -2+3] --documentação MDN Web Docs */
+
+.top_linguagens li:nth-child(-n + 3) {
+  color: blue;
+}
+
+.bg_rosa {
+  background-color: pink;
+}
+
+/* bonus */
+
+.aliados_dev li:nth-of-type(1) :hover {
+  font-weight: bold;
+  color: orange;
+}
+
+.aliados_dev li:nth-of-type(2) :hover {
+  font-weight: bold;
+  color: green;
+}
+
+.aliados_dev li:nth-of-type(3) :hover {
+  font-weight: bold;
+  color: black;
+}
+
+.aliados_dev li:nth-of-type(4) :hover {
+  font-weight: bold;
+  color: yellow;
+}
+
+.aliados_dev li:nth-of-type(5) :hover {
+  font-weight: bold;
+  color: darkgreen;
+}
