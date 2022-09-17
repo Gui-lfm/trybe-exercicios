@@ -1,0 +1,17 @@
+h1, p{
+
+    text-align: center;
+}
+
+li:hover{
+    background-color: coral;
+}
+
+li:active{
+    font-family: monospace;
+    font-size: 24px;
+}
+
+li{
+    list-style: none;
+}
