@@ -22,10 +22,6 @@ function modulo(a, b) {
 
 //parte 2
 
-const num1 = 5
-const num2 = 3
-const num3 = 8
-
 function verificaMaior(a, b) {
     if (a > b) {
         return `${a} é maior que ${b}`;
