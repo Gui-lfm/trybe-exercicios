@@ -8,20 +8,20 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ## Fundamentos do Desenvolvimento Web :heavy_check_mark:
 
-##### Bloco 1: Introdução - Unix & Bash
+##### Seção 1: Introdução - Unix & Bash
 
 - [x] 1-1: _Fundamentos do Desenvolvimento Web_
 - [x] 1-1: _Introdução - Unix & Shell_
 - [x] 1-1: _Unix & Bash- Pt.1_
 - [x] 1-2: _Unix & Bash- Pt.2_
 
-##### Bloco 2: Git & GitHub
+##### Seção 2: Git & GitHub
 
 - [x] 2-1: _O que é e para que serve?_
 - [x] 2-2: _Entendendo os comandos_
 - [x] 2-3: _Internet - Entendendo como ela funciona_
 
-##### Bloco 3: Introdução à HTML e CSS
+##### Seção 3: Introdução à HTML e CSS
 
 - [x] 3-1: _Introdução - HTML e CSS_
 - [x] 3-1: _HTML e CSS - Estruturas de página_
@@ -30,10 +30,19 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 3-4: _HTML Semântico_
 - [x] 3-5: _Projeto - Lessons Learned_
 
-##### Bloco 4: Introdução à JavaScript
+##### Seção 4: Introdução à JavaScript
 
 - [x] 4-1: _JavaScript - primeiros passos_
 - [x] 4-2: _JavaScript - Array e loop For_
 - [x] 4-3: _JavaScript - Lógica de Programação e Algorítimos_
-- [ ] 4-4: _JavaScript - Objetos e funções_
-- [ ] 4-5: _Projeto - Playground Functions_
+- [x] 4-4: _JavaScript - Objetos e funções_
+- [x] 4-5: _Projeto - Playground Functions_
+
+##### Seção 5: JavaScript: DOM, Eventos e Web Storage
+
+- [ ] 6-1: _JavaScript - DOM e seletores_
+- [ ] 6-2: _JavaScript - Trabalhando com elementos_
+- [ ] 6-3: _JavaScript - Eventos_
+- [ ] 6-4: _JavaScript - Web Storage_
+- [ ] 6-5: _Projeto - Arte com pixels_
+- [ ] 6-6: _Projeto Bônus_
