@@ -40,9 +40,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Seção 5: JavaScript: DOM, Eventos e Web Storage
 
-- [ ] 6-1: _JavaScript - DOM e seletores_
-- [ ] 6-2: _JavaScript - Trabalhando com elementos_
-- [ ] 6-3: _JavaScript - Eventos_
-- [ ] 6-4: _JavaScript - Web Storage_
-- [ ] 6-5: _Projeto - Arte com pixels_
-- [ ] 6-6: _Projeto Bônus_
+- [ ] 5-1: _JavaScript - DOM e seletores_
+- [ ] 5-2: _JavaScript - Trabalhando com elementos_
+- [ ] 5-3: _JavaScript - Eventos_
+- [ ] 5-4: _JavaScript - Web Storage_
+- [ ] 5-5: _Projeto - Arte com pixels_
+- [ ] 5-6: _Projeto Bônus_
