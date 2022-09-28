@@ -6,11 +6,21 @@ function MudaParagrafo(string) {
 
 MudaParagrafo('em dois anos me vejo morando na praia')
 
-// parte 2
+// parte 2 e 3
 
-function mudaBg(cor){
-    let quadrado = document.getElementsByClassName('main-content');
+function mudaBg(element, cor){
+    let quadrado = document.getElementsByClassName(element);
    quadrado[0].style.backgroundColor = cor;
 }
 
-mudaBg('rgb(76,164,109)');
+mudaBg('main-content','rgb(76,164,109)');
+mudaBg('center-content', 'white')
+
+// parte 4
+
+function mudaTitulo(string){
+    let title = document.getElementsByClassName('title')[0]
+    title.innerText = string
+}
+
+mudaTitulo('Exercício - JavaScript')
