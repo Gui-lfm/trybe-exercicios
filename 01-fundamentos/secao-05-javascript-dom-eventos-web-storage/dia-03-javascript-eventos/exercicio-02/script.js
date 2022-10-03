@@ -84,7 +84,7 @@ btnSexta.addEventListener('click', function () {
         const dia = sexta[i];
         if (dia.innerText !== 'SEXTOU') {
             dia.innerText = 'SEXTOU'
-        }else{
+        } else {
             dia.innerText = daysList[i];
         }
     }
@@ -119,7 +119,7 @@ function addTarefa(string) {
 addTarefa('organizar anotações');
 
 // parte 8
-function addCorTarefa(cor){
+function addCorTarefa(cor) {
     const corTarefa = document.createElement('div');
     corTarefa.className = 'task';
     corTarefa.style.backgroundColor = cor;
@@ -129,18 +129,26 @@ function addCorTarefa(cor){
 addCorTarefa('red');
 
 //parte 9
-function selecionaTarefa(){
-    divTarefas.addEventListener('click', function(event){
-        const classe = event.target.className;
-        if(event.target.className === 'task'){
+function selecionaTarefa() {
+    divTarefas.addEventListener('click', function (event) {
+        const cor = event.target.style.backgroundColor;
+        if (event.target.className === 'task') {
             event.target.classList.add('selected')
-        }else{
+        } else {
             event.target.classList.remove('selected')
         }
-        console.log(classe);
     })
+
 }
 
 selecionaTarefa();
 
 // parte 10
+
+function mudaCorDia() {
+    const cor = document.querySelector('.task selected');
+    const tarefa = document.querySelector('.task');
+    
+}
+
+mudaCorDia();
