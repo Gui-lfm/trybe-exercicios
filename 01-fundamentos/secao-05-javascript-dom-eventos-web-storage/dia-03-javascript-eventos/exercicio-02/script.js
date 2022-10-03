@@ -128,7 +128,17 @@ addCorTarefa('red');
 
 //parte 9
 function selecionaTarefa(){
-    
+    divTarefas.addEventListener('click', function(event){
+        const classe = event.target.className;
+        if(event.target.className === 'task'){
+            event.target.classList.add('selected')
+        }else{
+            event.target.classList.remove('selected')
+        }
+        console.log(classe);
+    })
 }
+
+selecionaTarefa();
 
 // parte 10
