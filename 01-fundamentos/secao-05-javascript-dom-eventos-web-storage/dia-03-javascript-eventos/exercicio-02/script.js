@@ -106,6 +106,29 @@ function zoomInOut() {
 zoomInOut();
 
 // parte 7
-function addTarefa(string) {
+const divTarefas = document.querySelector('.my-tasks')
 
+function addTarefa(string) {
+    const tarefa = document.createElement('span');
+    tarefa.innerText = string;
+    divTarefas.appendChild(tarefa);
 }
+
+addTarefa('organizar anotações');
+
+// parte 8
+function addCorTarefa(cor){
+    const corTarefa = document.createElement('div');
+    corTarefa.className = 'task';
+    corTarefa.style.backgroundColor = cor;
+    divTarefas.appendChild(corTarefa);
+}
+
+addCorTarefa('red');
+
+//parte 9
+function selecionaTarefa(){
+    
+}
+
+// parte 10
