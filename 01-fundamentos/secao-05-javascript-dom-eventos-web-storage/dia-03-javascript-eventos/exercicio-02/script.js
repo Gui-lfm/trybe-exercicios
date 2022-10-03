@@ -76,21 +76,36 @@ btnDiv.appendChild(btnSexta);
 
 // parte 5
 
-btnSexta.addEventListener('click', function(){
+btnSexta.addEventListener('click', function () {
     const sexta = document.querySelectorAll('.friday')
-    console.log(sexta);
+
+
+    for (let i = 0; i < sexta.length; i += 1) {
+        const dia = sexta[i];
+        if (dia.innerText !== 'SEXTOU') {
+            dia.innerText = 'SEXTOU'
+        }
+    }
 })
 
 // parte 6
-function zoomIn(){
+const dias = document.querySelectorAll('.day');
 
+function zoomInOut() {
+    for (let i = 0; i < dias.length; i++) {
+        const dia = dias[i];
+        dia.addEventListener('mouseenter', function (event) {
+            event.target.style.fontSize = '36px'
+        });
+        dia.addEventListener('mouseout', function (event) {
+            event.target.style.fontSize = '20px'
+        });
+    }
 }
 
-function zoomOut(){
-
-}
+zoomInOut();
 
 // parte 7
-function addTarefa(){
+function addTarefa(string) {
 
 }
