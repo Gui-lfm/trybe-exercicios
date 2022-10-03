@@ -78,12 +78,14 @@ btnDiv.appendChild(btnSexta);
 
 btnSexta.addEventListener('click', function () {
     const sexta = document.querySelectorAll('.friday')
-
+    const daysList = [4, 11, 18, 25];
 
     for (let i = 0; i < sexta.length; i += 1) {
         const dia = sexta[i];
         if (dia.innerText !== 'SEXTOU') {
             dia.innerText = 'SEXTOU'
+        }else{
+            dia.innerText = daysList[i];
         }
     }
 })
