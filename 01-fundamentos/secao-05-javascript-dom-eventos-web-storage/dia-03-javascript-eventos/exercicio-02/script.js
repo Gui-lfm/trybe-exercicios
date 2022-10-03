@@ -14,9 +14,9 @@ function createDaysOfTheWeek() {
 createDaysOfTheWeek();
 
 // parte 1
+const decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 
 function createDays() {
-    const decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
     const daysList = document.querySelector('#days')
 
     for (let i = 0; i < decemberDaysList.length; i += 1) {
@@ -29,7 +29,7 @@ function createDays() {
             dayItem.classList.add('friday')
         }
 
-        if(dayItem.innerText === '24' || dayItem.innerText === '25' || dayItem.innerText === '31'){
+        if (dayItem.innerText === '24' || dayItem.innerText === '25' || dayItem.innerText === '31') {
             dayItem.classList.add('holiday')
         }
 
@@ -40,15 +40,57 @@ function createDays() {
 createDays();
 
 // parte 2
+const btnDiv = document.querySelector('.buttons-container');
 
-function criaBotao(string){
-    const btnDiv = document.querySelector('.buttons-container');
-    const btnFeriado = document.createElement('button');
-    btnFeriado.innerText = string;
-    btnFeriado.id = 'btn-holiday';
+function criaBotao(string, id) {
+    const botao = document.createElement('button');
+    botao.innerText = string;
+    botao.id = id;
 
-    btnDiv.appendChild(btnFeriado);
+    return botao
+}
+
+const btnFeriado = criaBotao('Feriado', 'btn-holiday')
+
+btnDiv.appendChild(btnFeriado);
+
+// parte 3
+
+btnFeriado.addEventListener('click', function () {
+    const feriado = document.querySelectorAll('.holiday')
+
+    for (let i = 0; i < feriado.length; i += 1) {
+        const dia = feriado[i];
+        if (dia.style.backgroundColor === 'rgb(47, 193, 140)') {
+            dia.style.backgroundColor = 'rgb(238,238,238)'
+        } else {
+            dia.style.backgroundColor = 'rgb(47, 193, 140)'
+        }
+    }
+})
+
+// parte 4
+
+const btnSexta = criaBotao('Sexta-Feira', 'btn-friday');
+btnDiv.appendChild(btnSexta);
+
+// parte 5
+
+btnSexta.addEventListener('click', function(){
+    const sexta = document.querySelectorAll('.friday')
+    console.log(sexta);
+})
+
+// parte 6
+function zoomIn(){
 
 }
 
-criaBotao('Feriados');
+function zoomOut(){
+
+}
+
+// parte 7
+function addTarefa(){
+
+}
