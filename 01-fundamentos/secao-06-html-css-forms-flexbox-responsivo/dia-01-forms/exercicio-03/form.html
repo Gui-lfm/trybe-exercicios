@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrybeTrip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="">
+
+        <!-- informações do usuário -->
+        <section class="form-section">
+            <label for="user-name">
+                Nome:
+                <input maxlength="50" type="text" name="name" id="user-name" required>
+            </label>
+            <br>
+            <br>
+            <label for="user-email">
+                Email:
+                <input maxlength="50" type="email" name="email" id="user-email" required>
+            </label>
+        </section>
+
+        <!-- destino desejado -->
+        <section class="form-section">
+            <input type="radio" name="trip-option" id="destination-1">
+            <label for="destination-1">Cidade</label>
+            <input type="radio" name="trip-option" id="destination-2">
+            <label for="destination-2">Campo</label>
+            <input type="radio" name="trip-option" id="destination-3">
+            <label for="destination-3">Praia</label>
+            <input type="radio" name="trip-option" id="destination-4">
+            <label for="destination-4">Montanhas</label>
+        </section>
+
+        <!-- resposta concurso -->
+        <section class="form-section">
+            <h2>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</h2>
+            <textarea id="user-response" maxlength="500" rows="10" cols="60" name="user-response" required></textarea>
+        </section>
+
+        <!-- data da viagem -->
+        <section class="form-section">
+            <label for="trip-date">
+                Qual a melhor data para realizar sua viagem?
+                <input type="date" name="day-trip" id="trip-date">
+            </label>
+        </section>
+
+        <!-- form-checks -->
+        <section class="form-section">
+            <label for="check-news">
+                Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+                <input type="checkbox" name="newsletter" id="check-news">
+            </label>
+            <br>
+            <label for="check-pictures">
+                Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+                <input type="checkbox" name="send-images" id="check-pictures">
+            </label>
+        </section>
+
+        <!-- enviar/apagar -->
+        <section class="form-section">
+            <button type="submit" id='clear-btn'>Enviar</button>
+            <button type="reset" id='reset-btn'>Apagar</button>
+        </section>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
