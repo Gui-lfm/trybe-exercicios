@@ -1,11 +1,26 @@
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
 }
 
-#lipsum{
-    margin: 0 20%;
+#lipsum {
+  margin: 0 20%;
 }
 
-p{
-    text-align: justify;
+p {
+  text-align: justify;
+}
+
+h3 {
+  text-align: center;
+}
+
+.user-preferences {
+  display: flex;
+  border: 5px solid black;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+.user-preferences section select{
+    margin-top: 1em;
 }
