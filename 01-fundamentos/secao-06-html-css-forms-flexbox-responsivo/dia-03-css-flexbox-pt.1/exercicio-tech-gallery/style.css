@@ -30,6 +30,13 @@ h3{
   font-size: .9em;
 }
 
+section:first-of-type{
+  display: flex;
+  justify-content: center;
+  margin: 1em 0;
+  font-size: 1.2em;
+}
+
 .gallery-img {
   width: 150px;
 }
