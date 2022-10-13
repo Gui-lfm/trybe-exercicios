@@ -46,3 +46,12 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-4: _JavaScript - Web Storage_
 - [x] 5-5: _Projeto - Arte com pixels_
 - [ ] 5-6: _Projeto Bônus_
+
+##### Seção 6: HTML e CSS: Forms, Flexbox e Responsivo
+
+- [x] 6-1: _HTML e CSS - Forms_
+- [x] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
+- [x] 6-3: _CSS Flexbox - Parte 1_
+- [x] 6-4: _CSS Flexbox - Parte 2_
+- [ ] 6-5: _CSS Responsivo - Mobile First_
+- [ ] 6-6: _Projeto - Trybewarts_
