@@ -60,8 +60,22 @@ html {
 
 /* tablet */
 @media screen and (min-width: 768px) {
+  body {
+    background-color: red;
+  }
+
+  .container {
+    background-color: aqua;
+  }
 }
 
 /* desktop */
 @media screen and (min-width: 1024px) {
+  body {
+    background-color: coral;
+  }
+
+  .container {
+    background-color: lightgreen;
+  }
 }
