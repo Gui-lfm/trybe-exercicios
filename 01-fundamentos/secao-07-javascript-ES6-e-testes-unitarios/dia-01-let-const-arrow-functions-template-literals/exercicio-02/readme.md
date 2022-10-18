@@ -56,7 +56,7 @@ Dica: Nesse exercício utilize document. getElementById para retornar o elemento
 
 - Crie duas funções JavaScript com as seguintes especificações:
 
-**Não se esqueça de usar template literals**
+- **Não se esqueça de usar template literals**
 
 - Função 1: Escreva uma função que substitua a letra ‘x’ em uma frase.
 
