@@ -54,4 +54,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 6-3: _CSS Flexbox - Parte 1_
 - [x] 6-4: _CSS Flexbox - Parte 2_
 - [ ] 6-5: _CSS Responsivo - Mobile First_
-- [ ] 6-6: _Projeto - Trybewarts_
+- [x] 6-6: _Projeto - Trybewarts_
+
+##### Seção 7: JavaScript: ES6 e Testes Unitários
+
+- [x] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
+- [ ] 7-2: _JavaScript ES6 - Fluxo de exceção e Objetos_
+- [ ] 7-3: _Primeiros passos em Jest_
+- [ ] 7-4: _Porjeto - JavaScript Testes Unitários_
