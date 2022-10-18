@@ -2,7 +2,7 @@
 
 - A aplicação pede à pessoa usuária que informe dois números para realizar uma soma. Esses números são inseridos através dos inputs;
 
-- Ao clicar o botão, a função sum é chamada, capturando o valor escrito nos inputs e realizando a operação. Antes, é necessária a conversão do valor usando o Number(), pois ele chega à função em forma de string, existem outras formas de converter uma string em um número, como o `parseInt()` e o `parseFloat();`
+- Ao clicar o botão, a função sum é chamada, capturando o valor escrito nos inputs e realizando a operação. Antes, é necessária a conversão do valor usando o `Number()`, pois ele chega à função em forma de string, existem outras formas de converter uma string em um número, como o `parseInt()` e o `parseFloat();`
 
 - Ao final, a função sum imprime o valor em um parágrafo e limpa os inputs para que a pessoa usuária possa inserir novos valores.
 
