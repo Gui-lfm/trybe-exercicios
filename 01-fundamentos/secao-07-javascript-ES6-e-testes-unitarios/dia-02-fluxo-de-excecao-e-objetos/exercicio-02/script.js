@@ -34,8 +34,11 @@ const order = {
   },
 };
 
+
 const customerInfo = (order) => {
-  // Adicione abaixo as informações necessárias.
+  const arrayOrder = Object.values(order);
+
+  return arrayOrder;
 };
 
 customerInfo(order);
