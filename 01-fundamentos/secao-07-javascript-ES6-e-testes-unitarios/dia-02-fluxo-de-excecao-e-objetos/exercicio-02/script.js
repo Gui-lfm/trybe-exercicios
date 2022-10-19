@@ -34,17 +34,35 @@ const order = {
   },
 };
 
-
 const customerInfo = (order) => {
   const arrayOrder = Object.values(order);
 
-  return arrayOrder;
+  const deliveryPerson = arrayOrder[3]["delivery"]["deliveryPerson"];
+  const customer = arrayOrder[0];
+  const phone = arrayOrder[1];
+  const street = arrayOrder[2]["street"];
+  const streetNumber = arrayOrder[2]["number"];
+  const apartmentNumber = arrayOrder[2]["apartment"];
+
+  const message = `Olá ${deliveryPerson}, entrega para: ${customer}, Telefone: ${phone}, R. ${street}, Nº: ${streetNumber}, AP: ${apartmentNumber}.`;
+
+  return message;
 };
 
-customerInfo(order);
+const message = customerInfo(order);
 
 const orderModifier = (order) => {
-  // Adicione abaixo as informações necessárias.
+  order['name'] = 'Luiz Silva';
+  order['payment']['total'] = 50;
+  
+  const arrayOrder = Object.values(order);
+  const drink = arrayOrder[3]['drinks']['coke']['type'];
+  const pizzas = Object.keys(arrayOrder[3]['pizza'])
+  
+  const message = `Olá ${arrayOrder[0]}, o total do seu pedido de ${pizzas} e ${drink} é R$ ${arrayOrder[4]['total']},00.`
+
+  return message;
 };
 
-orderModifier(order);
+console.log(orderModifier(order));
+
