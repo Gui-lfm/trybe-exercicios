@@ -42,7 +42,7 @@ function listValues(obj) {
 
 const allLessons = Object.assign({}, { lesson1 }, { lesson2 }, { lesson3 });
 
-function totalStudents(obj){
+function totalStudents(obj) {
   let nTotal = 0;
 
   for (const key in obj) {
@@ -50,5 +50,20 @@ function totalStudents(obj){
     nTotal += nEstudantes;
   }
 
-  return `total de estudantes: ${nTotal}`
+  return `total de estudantes: ${nTotal}`;
 }
+
+function getValueByNumber(object, number) {
+  const objectValue = Object.values(object);
+  const value = objectValue[number];
+
+  return value;
+}
+
+function verifyPair(object, key, value){
+  const allEntries = Object.entries(object)
+  
+  return allEntries
+}
+
+console.log(verifyPair(lesson1));

@@ -46,7 +46,7 @@ console.log(getValueByNumber(lesson1, 0));
 
 ```javascript
 console.log(verifyPair(lesson3, 'turno', 'noite'));
-// Output: true,
+// Output: true
 console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
 // Output: false
 ```
