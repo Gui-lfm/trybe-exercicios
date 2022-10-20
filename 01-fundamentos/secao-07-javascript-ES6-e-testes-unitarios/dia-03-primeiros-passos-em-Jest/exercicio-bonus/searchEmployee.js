@@ -59,4 +59,4 @@ const searchEmployee = (id, detail) => {
   return funcionarioSelecionado[detail];
 };
 
-console.log(searchEmployee('4675-2', 'lastName'));
+module.exports = searchEmployee;
