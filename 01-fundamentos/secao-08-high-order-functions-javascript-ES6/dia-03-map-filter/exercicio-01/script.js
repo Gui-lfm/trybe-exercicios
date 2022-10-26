@@ -95,4 +95,9 @@ const fantasyOrScienceFictionAuthors = filteredBooks
   .map((book) => book.author.name)
   .sort();
 
-console.log(fantasyOrScienceFictionAuthors);
+//parte 6
+const oldBooksNames = () => {
+  const names = books.filter(oldBooksOrdered);
+  return names.map((book) => book.name).sort();
+};
+console.log(oldBooksNames());
