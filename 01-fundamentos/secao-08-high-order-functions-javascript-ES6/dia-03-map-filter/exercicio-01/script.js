@@ -100,4 +100,12 @@ const oldBooksNames = () => {
   const names = books.filter(oldBooksOrdered);
   return names.map((book) => book.name).sort();
 };
-console.log(oldBooksNames());
+
+// parte 7
+function authorWith3DotsOnName() {
+  const result = books.filter((book) =>
+    /^\w\.\s\w\.\s\w\./.test(book.author.name)
+  );
+
+  return result[0].name;
+}
