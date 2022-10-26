@@ -84,3 +84,15 @@ const fantasyOrScienceFiction = (book) =>
 const filteredBooks = books.filter(fantasyOrScienceFiction);
 
 //parte 4
+const oldBooksOrdered = (book) => 2022 - book.releaseYear >= 60;
+
+const oldBooks = books
+  .filter(oldBooksOrdered)
+  .sort((a, b) => a.releaseYear - b.releaseYear);
+
+//parte 5
+const fantasyOrScienceFictionAuthors = filteredBooks
+  .map((book) => book.author.name)
+  .sort();
+
+console.log(fantasyOrScienceFictionAuthors);
