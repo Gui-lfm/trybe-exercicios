@@ -67,8 +67,6 @@ const formatedBookNames = (book) =>
 
 const formatedList = books.map(formatedBookNames);
 
-console.log(formatedList);
-
 //parte 2
 const nameAndAge = (book) => {
   const authorInfo = {};
@@ -79,6 +77,10 @@ const nameAndAge = (book) => {
 
 const authorNameAge = books.map(nameAndAge).sort((a, b) => a.age - b.age);
 
-console.log(authorNameAge);
-
 // parte 3
+const fantasyOrScienceFiction = (book) =>
+  book.genre === 'Ficção Científica' || book.genre === 'Fantasia';
+
+const filteredBooks = books.filter(fantasyOrScienceFiction);
+
+//parte 4
