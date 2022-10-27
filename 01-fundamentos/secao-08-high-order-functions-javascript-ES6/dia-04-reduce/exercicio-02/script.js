@@ -62,7 +62,23 @@ const books = [
 ];
 
 // Parte 1:
-
 function reduceNames() {
-  
+  const names = books.map((book) => book.author.name);
+  return names.reduce((acc, curr) => acc + `, ${curr}`);
+}
+
+console.log(longestNamedBook());
+
+// parte 2
+function averageAge() {
+  const ages = books.map((book) => book.releaseYear - book.author.birthYear);
+  let SumOfAges = ages.reduce((acc, curr) => acc + curr);
+
+  return SumOfAges / books.length;
+}
+
+// parte 3
+function longestNamedBook() {
+ const bookNames = books.map((book)=>book.name);
+ return bookNames.reduce((acc, curr)=>acc.length > curr.length ? acc : curr)
 }
