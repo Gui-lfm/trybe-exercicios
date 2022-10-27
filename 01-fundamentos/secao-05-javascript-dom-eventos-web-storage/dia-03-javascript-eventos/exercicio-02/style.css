@@ -76,6 +76,10 @@ label {
   width: 49%;
 }
 
+.my-tasks h3{
+  text-align: center;
+}
+
 .my-tasks div {
   border: 1px solid black;
   border-radius: 100%;
@@ -96,10 +100,15 @@ label {
   color: #666;
   font-size: 18px;
   font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   letter-spacing: 3px;
   padding-bottom: 10px;
-  vertical-align: middle;
+  padding-right: 10px;
 }
+
+.ta
 
 .tasks-container {
   height: 130px;
