@@ -66,8 +66,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Seção 8: High Order Functions do JavaScript ES6
 
 - [x] 8-1: _JavaScript ES6 - Introdução a High Order Functions_
-- [ ] 8-2: _JavaScript ES6 - High Order Functions - ForEach, find, some, every, sort_
-- [ ] 8-3: _JavaScript ES6 - High Order Functions - Map e Filter_
-- [ ] 8-4: _JavaScript ES6 - High Order Functions - Reduce_
-- [ ] 8-5: _JavaScript ES6 - Spread Operator, parâmetro REST, destructuring e mais_
-- [ ] 8-6: _Projeto - Zoo Functions_
+- [x] 8-2: _JavaScript ES6 - High Order Functions - ForEach, find, some, every, sort_
+- [x] 8-3: _JavaScript ES6 - High Order Functions - Map e Filter_
+- [x] 8-4: _JavaScript ES6 - High Order Functions - Reduce_
+- [x] 8-5: _JavaScript ES6 - Spread Operator, parâmetro REST, destructuring e mais_
+- [x] 8-6: _Projeto - Zoo Functions_
