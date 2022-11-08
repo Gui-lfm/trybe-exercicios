@@ -5,14 +5,16 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite --open",
-    "lint": "eslint ./src"
+    "lint": "eslint ./src",
+    "build": "vite build"
   },
   "keywords": [],
   "author": "Guilherme Lucena",
   "license": "ISC",
   "dependencies": {
     "eslint-config-airbnb-base": "^15.0.0",
-    "nanoid": "^4.0.0"
+    "nanoid": "^4.0.0",
+    "vite": "^3.2.3"
   },
   "type": "module",
   "devDependencies": {
