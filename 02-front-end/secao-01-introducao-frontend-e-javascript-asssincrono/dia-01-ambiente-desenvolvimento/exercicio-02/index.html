@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>validando forms</title>
+</head>
+
+<body>
+  <form>
+    <label for="input-field">Digite o texto a ser validado:</label>
+    <input id='input-field' type="text">
+
+    <label for="validation">Selecione a validação a ser testada:</label>
+    <select name="validation" id="validation">
+      <option value="email">email</option>
+      <option value="numero-int">numero inteiro</option>
+      <option value="maiuscula">letra maiuscula</option>
+      <option value="alfanumerico">alfanumérico</option>
+      <option value="vazio">campo vazio</option>
+    </select>
+  </form>
+  <script src="src/main.js"></script>
+</body>
+
+</html>
