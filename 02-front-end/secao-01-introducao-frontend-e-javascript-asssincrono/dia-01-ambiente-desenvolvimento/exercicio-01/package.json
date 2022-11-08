@@ -4,9 +4,23 @@
   "description": "projeto realizado durante a primeira aula de front-end da Trybe",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite --open",
+    "lint": "eslint ./src"
   },
   "keywords": [],
   "author": "Guilherme Lucena",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "eslint-config-airbnb-base": "^15.0.0",
+    "nanoid": "^4.0.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^8.27.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  }
 }
