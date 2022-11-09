@@ -13,5 +13,4 @@ btnSafePassword.addEventListener('click', () => {
 
 copyPassword.addEventListener('click', async ()=>{
   await copy(passwordField.innerText);
-  alert('senha copiada');
 });
