@@ -1,19 +1,45 @@
 import React, { Component } from 'react';
 
-function btnClick(message) {
-  console.log(message);
-}
-
 class App extends Component {
+  state = {
+    btnUm: 0,
+    btnDois: 0,
+    btnTres: 0,
+  };
+
+  btnClickOne = () => {
+    this.setState((prevState) => ({
+      btnUm: prevState.btnUm + 1,
+    }));
+  };
+
+  btnClickTwo = () => {
+    this.setState((prevState) => ({
+      btnDois: prevState.btnDois + 1,
+    }));
+  };
+
+  btnClickThree = () => {
+    this.setState((prevState) => ({
+      btnTres: prevState.btnTres + 1,
+    }));
+  };
+
   render() {
+    const { btnUm, btnDois, btnTres } = this.state;
     return (
       <>
-        <button onClick={btnClick('clicou botão 1')}>Botão 1</button>
-        <button onClick={btnClick('clicou botão 2')}>Botão 2</button>
-        <button onClick={btnClick('clicou botão 3')}>Botão 3</button>
+        <button type="button" onClick={this.btnClickOne}>
+          {btnUm}
+        </button>
+        <button type="button" onClick={this.btnClickTwo}>
+          {btnDois}
+        </button>
+        <button type="button" onClick={this.btnClickThree}>
+          {btnTres}
+        </button>
       </>
     );
   }
 }
-
 export default App;
