@@ -1,0 +1,39 @@
+version: '3'
+services:
+  backend:
+    build: backend/
+    restart: on-failure
+    ports:
+      - 3001:3001
+    environment:
+      - DB_HOST=database
+    depends_on:
+      - database
+    networks:
+      - network-1
+      - network-2
+  frontend: 
+    build: frontend/
+    restart: on-failure
+    ports:
+      - 3000:3000
+    depends_on:
+      - backend
+    volumes:
+      - ./logs:/var/log/frontend
+    networks:
+      - network-1
+  database:
+    image: betrybe/docker-compose-example-database:v1
+    restart: on-failure
+    volumes:
+      - dados-do-banco:/data/db
+    networks:
+      - network-2
+
+volumes:
+  dados-do-banco:
+
+networks:
+  network-1:
+  network-2:
