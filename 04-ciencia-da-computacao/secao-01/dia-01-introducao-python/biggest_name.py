@@ -7,4 +7,3 @@ def find_biggest_name(names: List[str]) -> str:
         if len(name) > len(biggest):
             biggest = name
     return biggest
-
